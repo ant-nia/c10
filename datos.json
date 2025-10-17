@@ -2,28 +2,28 @@
   {
     "title": "íntimo",
     "date": "Editorial",
-    "photo": "https://github.com/ant-nia/c10/blob/main/destacado.jpg?raw=true",
+    "photo": "destacado.jpg",
     "description": "Exploración de memoria visual y política en archivos gráficos.",
     "category": "2025"
   },
   {
     "title": "Territorio Gráfico",
     "date": "Diseño Territorial",
-    "photo": "https://github.com/ant-nia/c10/blob/main/brp.jpg?raw=true",
+    "photo": "brp.jpg",
     "description": "Cartografía visual de espacios urbanos.",
     "category": "2024"
   },
   {
     "title": "Óptica Quieta",
     "date": "Fotografía",
-    "photo": "https://github.com/ant-nia/c10/blob/main/centro.jpg?raw=true",
+    "photo": "centro.jpg",
     "description": "Compilación fotográfica de experimentaciones personales.",
     "category": "2024"
   },
   {
     "title": "Témpera Roja",
     "date": "Proyecto Visual",
-    "photo": "https://github.com/ant-nia/c10/blob/main/e.jpg?raw=true",
+    "photo": "e.jpg",
     "description": "Ensayo visual sobre color, protesta y afecto.",
     "category": "2025"
   }
