@@ -1,28 +1,28 @@
 {
-    "title": "íntimo",
-    "date": "Editorial",
-    "photo": "patio.jpg",
+    "titulo": "íntimo",
+    "categoria": "Editorial",
+    "imagen": "patio.jpg",
     "description": "Exploración de memoria visual y política en archivos gráficos.",
-    "category": "2025"
+    "alt": "2025"
 },
 {
-    "title": "Territorio Gráfico",
-    "date": "Diseño Territorial",
-    "photo": "brp.jpg",
+    "titulo": "Territorio Gráfico",
+    "categoria": "Diseño Territorial",
+    "imagen": "brp.jpg",
     "description": "Cartografía visual de espacios urbanos.",
-    "category": "2024"
+    "alt": "2024"
 },
 {
-    "title": "Óptica Quieta",
-    "date": "Fotografía",
-    "photo": "centro.jpg",
+    "titulo": "Óptica Quieta",
+    "categoria": "Fotografía",
+    "imagen": "centro.jpg",
     "description": "Compilación fotográfica de experimentaciones personales.",
-    "category": "2024"
+    "alt": "2024"
 },
 {
-    "title": "Témpera Roja",
-    "date": "Proyecto Visual",
-    "photo": "e.jpg",
+    "titulo": "Témpera Roja",
+    "categoria": "Proyecto Visual",
+    "imagen": "e.jpg",
     "description": "Ensayo visual sobre color, protesta y afecto.",
-    "category": "2025"
+    "alt": "2025"
 }
