@@ -32,4 +32,4 @@ async function datos(url) {
 }
 
 // ✅ Ruta correcta al JSON RAW
-datos("https://raw.githubusercontent.com/ant-nia/c10/main/datos.json");
+datos("https://raw.githubusercontent.com/ant-nia/c10/refs/heads/main/datos.json")
