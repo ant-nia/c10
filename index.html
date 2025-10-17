@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Portafolio de Antonia Labra - Diseñadora Gráfica & Visual" />
+        <title>Ant Labra - Portafolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+        <link href="style.css" rel="stylesheet" />
+        <meta name="theme-color" content="#712cf9" />
+    </head>
+    <body>
+        <header>
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>Hola!</h4>
+                            <p class="text-body-secondary">Soy Antonia Labra, Diseñadora Gráfica & Visual interesada en la relación entre imagen, política y territorio.</p>
+                        </div>
+
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="ms-2">Habilidades</h4>
+                            <table id="aqui" class="table table-hover table-borderless"></table>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.instagram.com/opticaquieta" target="_blank" class="text-white">Portafolio</a></li>
+                            <li><a href="https://www.linkedin.com/in/antonia-labra-barraza-6b6877342/" target="_blank" class="text-white">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/__temperaroja/" target="_blank" class="text-white">Fotografía Política</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Ant Labra</h1>
+                        <p class="lead text-body-secondary">Diseñadora Gráfica & Visual</p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2">Portafolio</a>
+                            <a href="#" class="btn btn-secondary my-2">Sobre mí</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="portafolio"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-body-secondary py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">Volver arriba</a></p>
+                <p class="mb-1">© 2025 Antonia Labra. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+            
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+
+
+        <script>
+            const habilidades = [
+                { programa: "Photoshop", valor: "70" },
+                { programa: "Ilustrator", valor: "80" },
+                { programa: "InDesign", valor: "50" },
+                { programa: "Fusion", valor: "100" },
+                { programa: "Figma", valor: "100" },
+            ];
+
+            const donde = document.querySelector("#aqui");
+            
+            habilidades.forEach((h) => {
+                donde.innerHTML += `
+                          <tr>
+                            <td class="pe-3">${h.programa}</td>
+                            <td>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 3" width="100" height="3">
+                                <rect width="${h.valor}" height="3" fill="white" />
+                              </svg>
+                            </td>
+                          </tr>`;
+            });
+        </script>
+    </body>
+
+</html>
+
