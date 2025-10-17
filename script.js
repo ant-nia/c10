@@ -7,7 +7,7 @@ async function datos(url) {
         const trabajos = await consulta.json();
         console.log("✅ Datos cargados:", trabajos);
 
-        portfolio.innerHTML = ""; // Limpia antes de agregar
+        portfolio.innerHTML = "";
         trabajos.forEach((v) => {
             portfolio.innerHTML += `
                 <div class="col">
@@ -31,4 +31,5 @@ async function datos(url) {
     }
 }
 
+// ✅ Ruta correcta al JSON RAW
 datos("https://raw.githubusercontent.com/ant-nia/c10/main/datos.json");
