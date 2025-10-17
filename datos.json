@@ -1,32 +1,28 @@
-const portafolio = document.querySelector("#portafolio");
-
-async function datos(url) {
-  try {
-    const consulta = await fetch(url);
-    const trabajos = await consulta.json();
-    console.log(trabajos);
-
-    trabajos.forEach((trabajo) => {
-      portafolio.innerHTML += `
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <img src="${trabajo.imagen}" class="card-img-top" alt="${trabajo.titulo}">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${trabajo.titulo}</h5>
-              <p class="flex-grow-1">${trabajo.descripcion || ""}</p>
-              <div class="d-flex justify-content-between align-items-center mt-auto">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">${trabajo.categoria}</button>
-                </div>
-                <small class="text-body-secondary">${trabajo.fecha || "Reciente"}</small>
-              </div>
-            </div>
-          </div>
-        </div>`;
-    });
-  } catch (error) {
-    console.error("Error al cargar los datos:", error);
-  }
+{
+    "title": "íntimo",
+    "date": "Editorial",
+    "photo": "patio.jpg",
+    "description": "Exploración de memoria visual y política en archivos gráficos.",
+    "category": "2025"
+},
+{
+    "title": "Territorio Gráfico",
+    "date": "Diseño Territorial",
+    "photo": "brp.jpg",
+    "description": "Cartografía visual de espacios urbanos.",
+    "category": "2024"
+},
+{
+    "title": "Óptica Quieta",
+    "date": "Fotografía",
+    "photo": "centro.jpg",
+    "description": "Compilación fotográfica de experimentaciones personales.",
+    "category": "2024"
+},
+{
+    "title": "Témpera Roja",
+    "date": "Proyecto Visual",
+    "photo": "e.jpg",
+    "description": "Ensayo visual sobre color, protesta y afecto.",
+    "category": "2025"
 }
-
-datos("https://raw.githubusercontent.com/ant-nia/c10/refs/heads/main/datos.json");
