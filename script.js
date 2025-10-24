@@ -29,5 +29,4 @@ async function datos(url) {
     }
 }
 
-// ✅ Ruta correcta al JSON RAW
 datos("https://api.myjson.online/v1/records/31192916-5df4-4a83-9ec0-0b0cfa4f98cc")
