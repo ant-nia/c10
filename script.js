@@ -2,10 +2,10 @@ const portfolio = document.querySelector("#portafolio");
 
 async function datos(url) {
     try {
-        const consulta = await fetch(url);
-        if (!consulta.ok) throw new Error(`HTTP ${consulta.status}`);
-        const trabajos = await consulta.json();
-        console.log("✅ Datos cargados:", trabajos);
+        let consulta = await fetch(raw);
+        let resultado = await consulta.json();
+        let trabajos = resultado.data;
+        console.log(trabajos);
 
         portfolio.innerHTML = "";
         trabajos.forEach((v) => {
@@ -32,4 +32,4 @@ async function datos(url) {
 }
 
 // ✅ Ruta correcta al JSON RAW
-datos("https://raw.githubusercontent.com/ant-nia/c10/refs/heads/main/datos.json")
+datos("https://api.myjson.online/v1/records/31192916-5df4-4a83-9ec0-0b0cfa4f98cc")
