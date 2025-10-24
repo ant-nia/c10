@@ -2,13 +2,11 @@ const portfolio = document.querySelector("#portafolio");
 
 async function datos(url) {
     try {
-        let consulta = await fetch(raw);
+         let consulta = await fetch(raw);
         let resultado = await consulta.json();
         let trabajos = resultado.data;
         console.log(trabajos);
-
-        portfolio.innerHTML = "";
-        trabajos.forEach((v) => {
+        trabajos.forEach((trabajo) => {
             portfolio.innerHTML += `
                 <div class="col">
                     <div class="card shadow-sm h-100">
