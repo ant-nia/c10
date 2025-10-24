@@ -25,7 +25,7 @@ async function datos(url) {
                 </div>`;
         });
     } catch (error) {
-        console.error("❌ Error al cargar los datos:", error);
+        console.error("Error al cargar los datos:", error);
     }
 }
 
