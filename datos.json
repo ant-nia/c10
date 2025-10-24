@@ -26,5 +26,12 @@
     "photo": "https://github.com/ant-nia/c10/blob/main/e.jpg?raw=true",
     "description": "Ensayo visual sobre color, protesta y afecto.",
     "category": "2025"
+  },
+    {
+    "title": "El Ingenio",
+    "date": "Diseño Territorial",
+    "photo": "https://github.com/ant-nia/c10/blob/main/ingenio.jpg?raw=true",
+    "description": "Trabajo comunitario con vecinos de El Ingenio en jornadas de Co-diseño turístico.",
+    "category": "2025"
   }
 ]
