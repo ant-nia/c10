@@ -1,5 +1,4 @@
 const portfolio = document.querySelector("#portafolio");
-
 async function datos(raw) {
     try {
         let consulta = await fetch(raw);
@@ -8,7 +7,6 @@ async function datos(raw) {
         console.log(trabajos);
         trabajos.forEach((trabajo) => {
             portfolio.innerHTML += `
-
                             <div class="col">
                                 <div class="card shadow-sm">
                                 <img src="${trabajo.imagen}" class"card-img-top">
@@ -30,5 +28,4 @@ async function datos(raw) {
         console.error("Error al cargar los datos:", error);
     }
 }
-
 datos("https://api.myjson.online/v1/records/31192916-5df4-4a83-9ec0-0b0cfa4f98cc")
